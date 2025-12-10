@@ -3,4 +3,4 @@
 backport kpke for go1.20+
 
 export `crypto/hpke` from:
-https://github.com/golang/go/tree/e3088d6eb8ff0d63edc3452cbed827cb67231182/src/crypto/hpke
+https://github.com/golang/go/tree/db0ab834d67131676ab2001ab8e72b197b22ce54/src/crypto/hpke

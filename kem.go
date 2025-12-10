@@ -377,6 +377,10 @@ func (k *dhKEMPrivateKey) decap(encPubEph []byte) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	kemContext := append(encPubEph, k.priv.PublicKey().Bytes()...)
+	kemContext := append(slicesClip(encPubEph), k.priv.PublicKey().Bytes()...)
 	return k.kem.extractAndExpand(dhVal, kemContext)
+}
+
+func slicesClip[S ~[]E, E any](s S) S {
+	return s[:len(s):len(s)]
 }
