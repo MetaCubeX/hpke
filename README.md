@@ -1,4 +1,5 @@
 # HPKE
+[![Go Reference](https://pkg.go.dev/badge/github.com/metacubex/hpke.svg)](https://pkg.go.dev/github.com/metacubex/hpke)
 
 backport kpke for go1.20+
 
